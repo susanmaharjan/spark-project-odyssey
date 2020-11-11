@@ -16,7 +16,7 @@ I used
 	``` sed -E 's/\b(the|The|be|Be|to|To|of|Of|And|and|a|A|in|In|that|That|have|Have|i|I|it|It|for|For|not|Not|on|On|with|With|he|He|as|As|you|You|do|Do|at|At|this|This|his|His|by|By|from|From|they|They|we|We|say|Say|her|Her|or|Or|an|An|will|Will|my|My|one|One|all|All|would|Would|there|There|their|Their|what|What|so|So|up|Up|out|Out|if|If|about|About|who|Who|get|Get|which|Which|go|Go|me|Me|.)\b/ /g' odyssey.mb.txt > cleanodyssey.txt```
 This command helped to eliminate top 50 most common words in english which starts with both lowercase and uppercase letters. I used [https://en.wikipedia.org/wiki/Most_common_words_in_English](https://en.wikipedia.org/wiki/Most_common_words_in_English)  to get the top 50 most commonly used english words. 
 Here I have replaced these words with space (" ") so, in the end I will not be considering space (" ") as an output of word count. We will also not take punctuation as words.
-If you want to learn more about using Git Bash check this [repo](https://github.com/denisecase/shell-data-processing) by Denies Case
+If you want to learn more about using Git Bash check this [repo](https://github.com/denisecase/shell-data-processing) by Denise Case
 3. Process the data with spark.
 -  You should already have spark in your machine. If not go to [https://github.com/denisecase/setup-spark](https://github.com/denisecase/setup-spark) by Denise Case to complete the spark set up.
 - Open PowerShell in the folder where you have the cleaned text. Then write ``` spark-shell```. This will open the spark with scala.
